@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Infinity Clash | Battle Arena</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="hud">
+            <div class="hp-bar enemy">HP Inimigo: <span id="enemy-hp">1000</span></div>
+            <div class="energy-container">
+                <div id="energy-fill"></div>
+                <span id="energy-text">⚡ 0</span>
+            </div>
+            <div class="hp-bar player">Seu HP: <span id="player-hp">1000</span></div>
+        </div>
+
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="deck">
+            <button class="card" onclick="spawnUnit('warrior')">
+                <span class="emoji">🛡️</span>
+                <span class="cost">⚡ 3</span>
+            </button>
+            <button class="card" onclick="spawnUnit('archer')">
+                <span class="emoji">🏹</span>
+                <span class="cost">⚡ 5</span>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
